@@ -1,0 +1,28 @@
+# python setup
+export PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:${PATH}"
+alias activate="source .venv/bin/activate"
+
+# homebrew setup
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# fastfetch setup
+if [[ -z "$FASTFETCH_SHOWN" ]] && command -v fastfetch >/dev/null; then
+  export FASTFETCH_SHOWN=1
+  fastfetch
+fi
+
+# apps setup
+firefox() {
+    if [[ "$1" == "-P" || "$1" == "-p" ]]; then
+        /opt/homebrew/bin/firefox "$@" 2> >(grep -v "GLD_TEXTURE")
+    else
+        /opt/homebrew/bin/firefox "$@"
+    fi
+}
+
+alias notion="open -a Notion"
+export EDITOR="subl -w"
+
+# zsh tools setup
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
