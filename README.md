@@ -25,7 +25,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
-Import the <a href='https://github.com/catppuccin/Terminal.app'>Catppuccin</a> theme in <a href='https://github.com/pentagramswheel/terminal-setup/themes'>the included themes folder</a> into your terminal.
+Import the <a href='https://github.com/catppuccin/Terminal.app'>Catppuccin</a> theme in <a href='https://github.com/pentagramswheel/terminal-setup/tree/main/themes'>the included themes folder</a> into your terminal.
 
 Install FastFetch and test its installation via
 ```
@@ -67,7 +67,7 @@ Import your own ASCII art via `~/.config/fastfetch/ascii.txt` and configure the 
 ```
 > Want to add a Catppuccin gradient? Precede each `ascii.txt` line with "$LINE_NUMBER". See <a href='https://github.com/catppuccin/Terminal.app'>Catppuccin</a> for an example.
 
-My setup uses <a href='https://github.com/pentagramswheel/terminal-setup/themes'>the included fastfetch folder</a>.
+My setup uses <a href='https://github.com/pentagramswheel/terminal-setup/tree/main/fastfetch'>the included fastfetch folder</a>.
 
 Depending on your setup, add the following lines to `~/.zshrc` or `~/.zprofile` to launch fastfetch upon startup:
 ```
