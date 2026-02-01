@@ -1,0 +1,24 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "/Users/YOUR_USERNAME/.config/fastfetch/ascii.txt",
+    "padding": {
+      "right": 2
+    }
+  },
+
+  "display": {
+    "separator": " : "
+  },
+
+  "modules": [
+    "os",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "terminal",
+    "cpu",
+    "memory"
+  ]
+}
